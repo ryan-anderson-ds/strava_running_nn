@@ -1,0 +1,6 @@
+*.spydata
+__pycache__/
+venv/
+env/
+trainingplan/
+Scripts/

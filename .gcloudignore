@@ -1,0 +1,5 @@
+*.spydata
+__pycache__/
+venv/
+env/
+.git/

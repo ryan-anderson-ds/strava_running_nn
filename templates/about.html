@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155999597-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-155999597-1');
+    </script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>How Effective is My Running Plan?</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/business-frontpage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./">How effective is my running plan?</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/about">About</a>
+              <span class="sr-only">(current)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div><br></div>
+  <!-- Header 
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">How effective is my running plan?</h1>
+          <p class="lead mb-5 text-white-50">sfasfasff</p>
+        </div>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h3>About</h3>
+        <hr>
+        <p>
+       
+			<h4 name="modeloutput">Understanding the model output</h4>
+            
+            The graph(s) shown are ordered by the importance of each item in a training plan. Here, the model has determined that,
+            for all athletes, "Weekly run distance" is the single most important determinant of running fitness.
+            
+            <p>
+            
+            <img src="static/example.png" border="1">
+            
+            <p>
+                        
+            At the top, the period of training before your last PB (5k, 10k, 21k, 42k) is shown. If you're a serious athlete, you know what it is. So long as Strava has determined that race is a PB, the model will pick it up.
+            
+            <p>
+            
+            <img src="static/example-1.png" border="1">     
+            
+            <p>
+            
+            Here, the most important factor in running fast (based on a combination of your data and what the model determines from other athletes) is weekly run distance. On the left, in the red bar, the bottom 10% of athletes who uploaded their data to the model are shown to run 9.3km per week or less. On the right, the top 10% of athletes are shown to run 56km per week or more. I am somewhere in-between, at 33.8km. This is indicated by the blue marker.
+                        
+            <p>
+            
+            <img src="static/example-2.png" border="1">     
+            
+            <p>
+            
+            Some factors are more complicated. This is a RELATIVE factor. The model has determined that, relative to the rest of your training, you should run more elevation to run a PB. The best athletes ran 1.26 times the amount of elevation for the three months before their best PB.
+                        
+            <p>
+            
+            <img src="static/example-3.png" border="1">                   
+                        
+            <p>
+            
+            Other factors are "slope" factors. Let's not look at these too technically, as it's determined by how much the factor increased or decreased each week. Here, my time spent running actually decreased by 696 seconds per week. This is bad: The top athletes increased their time running by 462 seconds each week. Not a big increase, but an increase nevertheless.
+            
+            <p>
+                        
+            <img src="static/example-4.png" border="1">        
+
+             
+        <p>
+        
+			<h4 name="mydata">How the model works</h4>
+            <ul>
+            <li>The model scours each athlete's data for their PBs. PBs are listed as 'best efforts' by Strava, for instance your fastest half marathon time</li>
+            <li>For the three months preceding that best effort, the model determines the training plan factors involved in that achievement</li>
+            <li>By applying this model to all athletes, the most important training plan factors are determined</li>
+            <li>When viewing your data, your last PB (the freshest one in your mind) is compared to the best - to see where you could improve</li>
+            </ul>
+
+            
+        <p>
+        
+			<h4 name="mydata">GDPR and my data</h4>
+            Your Personal Identifiable Information (PII) - name and city - are removed from your data. You are identifiable only by your Strava Athlete ID. To have your data removed, please <a href="mailto:rian.vandenander@gmail.com" target="_blank">email</a> me.
+		
+        
+      </div>
+
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; <a href="https://rian-van-den-ander.github.io/" target="_blank"><font color="white"><u>Rian van den Ander</u></font></a> 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
